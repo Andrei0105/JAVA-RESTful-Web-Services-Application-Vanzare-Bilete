@@ -1,5 +1,7 @@
 # JAVA: RESTful Web Services Application – Vanzare Bilete
 
+Aplicatia a fost dezvoltata in Eclipse folosind JDK 1.7, [Jersey](https://jersey.github.io/) si [MongoDB](http://mongodb.github.io/mongo-java-driver/3.4/driver/). A fost testata folosind un server [Tomcat 8](https://tomcat.apache.org/download-80.cgi) pe portul local 8085.
+
 ### Servicii implementate conform cerintei
 
  * /list_events GET - Pentru obtinerea tuturor evenimentelor
@@ -28,13 +30,15 @@ Metoda *getConnection* returneaza fie colectia **events**, fie colectia **ticket
 
 ### Exemple utilizare servicii
 
-#### /list_events
+Serviciile POST au fost testate folosind [Postman](https://www.getpostman.com/).
+
+### /list_events
 
 Returneaza in format XML evenimentele din baza de date.
 
 ![list_events](https://cloud.githubusercontent.com/assets/16063287/26532514/3988d31e-440b-11e7-9dd7-4e562b9dc393.PNG)
 
-#### /buy_ticket
+### /buy_ticket
 
 Introduce un ticket in baza de date.
 
@@ -48,14 +52,14 @@ Introduce un ticket in baza de date.
 ![buy_ticket_succes](https://cloud.githubusercontent.com/assets/16063287/26532517/39cf2fda-440b-11e7-9314-f639317d6c76.PNG)
 
 
-#### /ticket_details
+### /ticket_details
 
 Returneaza in format XML detaliile biletului identificat de *ticketId*.
 
 ![ticket_details](https://cloud.githubusercontent.com/assets/16063287/26532513/3987fcdc-440b-11e7-8926-44a1000befd3.PNG)
 
 
-#### /cancel_ticket
+### /cancel_ticket
 
 Sterge din baza de date biletul identificat de *ticketId*.
 
